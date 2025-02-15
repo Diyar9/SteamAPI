@@ -12,6 +12,12 @@
   color: white;
 }
 
+.news-card {
+  border-left: solid #2a475e ;
+  padding-left: 25px;
+  margin-bottom: 50px;
+}
+
 .wrapper {
   padding: 15px;
   text-align: left;
@@ -21,9 +27,10 @@
   list-style-type: none;
 }
 
-li {
-  margin-bottom: 25px;
+#specialUl {
+  list-style-type: initial;
 }
+
 
 /*.App-logo {
   height: 40vmin;

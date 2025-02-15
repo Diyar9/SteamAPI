@@ -39,7 +39,7 @@ function App() {
                                     return (
                                         <div key={title}>
                                             <h3>{title}</h3>
-                                            <ul>
+                                            <ul id="specialUl">
                                                 {listItems.map((line, index) => (
                                                     <li key={index}>{line.trim()}</li>
                                                 ))}
@@ -49,14 +49,16 @@ function App() {
                                 });
 
                                 return (
-                                    <li key={item.id}>
-                                        <h3>{item.title}</h3>
-                                        <p>{new Date(item.date * 1000).toDateString()}</p>
-                                        {sections}
-                                        <a href={item.url} target="_blank" rel="noopener noreferrer">
-                                            Läs mer
-                                        </a>
-                                    </li>
+                                    <div className="news-card">
+                                        <li key={item.id}>
+                                            <h3>{item.title}</h3>
+                                            <p>{new Date(item.date * 1000).toDateString()}</p>
+                                            {sections}
+                                            <a href={item.url} target="_blank" rel="noopener noreferrer">
+                                                Läs mer
+                                            </a>
+                                        </li>
+                                    </div>
                                 );
                             })
                         ) : (
