@@ -15,8 +15,7 @@ public class PlayerSummariesController {
     }
 
     @GetMapping
-    public PlayerSummariesResponse getSummaries(@RequestParam String key,
-                                                @RequestParam String steamids) {
-        return playerSummariesService.getPlayerSummaries(key, steamids);
+    public PlayerSummariesResponse getSummaries(@RequestParam String steamids) {
+        return playerSummariesService.getPlayerSummaries(steamids);
     }
 }

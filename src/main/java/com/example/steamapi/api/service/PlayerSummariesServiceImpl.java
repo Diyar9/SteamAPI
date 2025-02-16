@@ -1,5 +1,6 @@
 package com.example.steamapi.api.service;
 
+import com.example.steamapi.api.config.SteamApiConfig;
 import com.example.steamapi.api.model.ISteamUser.GetPlayerSummaries.PlayerSummariesResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
@@ -8,13 +9,19 @@ import org.springframework.web.client.RestTemplate;
 public class PlayerSummariesServiceImpl implements PlayerSummariesService {
 
     private final String STEAM_API_URL = "http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/";
+    private final RestTemplate restTemplate;
+    private final SteamApiConfig steamApiConfig;
+
+    public PlayerSummariesServiceImpl(SteamApiConfig steamApiConfig) {
+        this.restTemplate = new RestTemplate();
+        this.steamApiConfig = steamApiConfig;
+    }
 
     @Override
-    public PlayerSummariesResponse getPlayerSummaries(String key, String steamids) {
-        String url = STEAM_API_URL + "?key=" + key
+    public PlayerSummariesResponse getPlayerSummaries(String steamids) {
+        String url = STEAM_API_URL + "?key=" + steamApiConfig.getApiKey()
                 + "&steamids=" + steamids;
 
-        RestTemplate restTemplate = new RestTemplate();
         return restTemplate.getForObject(url, PlayerSummariesResponse.class);
     }
 }
