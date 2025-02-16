@@ -1,6 +1,6 @@
 package com.example.steamapi.api.service;
 
-import com.example.steamapi.api.model.SteamNewsResponse;
+import com.example.steamapi.api.model.ISteamNews.GetNewsForApp.SteamNewsResponse;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 

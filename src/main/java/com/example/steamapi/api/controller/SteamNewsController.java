@@ -1,6 +1,6 @@
 package com.example.steamapi.api.controller;
 
-import com.example.steamapi.api.model.SteamNewsResponse;
+import com.example.steamapi.api.model.ISteamNews.GetNewsForApp.SteamNewsResponse;
 import com.example.steamapi.api.service.SteamNewsService;
 import org.springframework.web.bind.annotation.*;
 

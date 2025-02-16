@@ -1,4 +1,4 @@
-package com.example.steamapi.api.model;
+package com.example.steamapi.api.model.ISteamNews.GetNewsForApp;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
