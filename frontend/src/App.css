@@ -31,6 +31,16 @@
   list-style-type: initial;
 }
 
+.Player-summaries{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  list-style-type: none;
+}
+
 
 /*.App-logo {
   height: 40vmin;

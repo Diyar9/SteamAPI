@@ -20,7 +20,7 @@ public class PlayerSummariesServiceImpl implements PlayerSummariesService {
 
     @Override
     public PlayerSummariesResponse getPlayerSummaries(String steamids) {
-        System.out.println("API-nyckel: " + steamConfigProperties.apiKey());
+        //System.out.println("API-nyckel: " + steamConfigProperties.apiKey());
 
         String url = STEAM_API_URL + "?key=" + steamConfigProperties.apiKey()
                 + "&steamids=" + steamids;
