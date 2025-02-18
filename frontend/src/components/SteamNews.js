@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import "./App.css";
+import { fetchSteamNews } from "../services/steamService"; // Importera API-anropen
+import "../App.css"; // Uppdaterad importväg om App.css ligger i src/
 
 function SteamNews() {
     const [list, setList] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:8080/api/steamnews/730")
-            .then((response) => response.json())
-            .then((data) => {
-                console.log("API-respons:", data);
-                setList(data.appnews.newsitems || []);
-            })
-            .catch((error) => console.error("Error fetching data:", error));
+        const getNews = async () => {
+            const news = await fetchSteamNews(730); // 730 är appID för CS:GO
+            setList(news);
+        };
+
+        getNews();
     }, []);
 
     return (

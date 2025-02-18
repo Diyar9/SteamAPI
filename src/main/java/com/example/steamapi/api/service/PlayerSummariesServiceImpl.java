@@ -2,7 +2,6 @@ package com.example.steamapi.api.service;
 
 import com.example.steamapi.api.config.SteamConfigProperties;
 import com.example.steamapi.api.model.ISteamUser.GetPlayerSummaries.PlayerSummariesResponse;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
