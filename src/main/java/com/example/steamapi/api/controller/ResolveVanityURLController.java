@@ -20,3 +20,5 @@ public class ResolveVanityURLController {
         return resolveVanityURLService.getResolveVanityURL(vanityurl, url_type);
     }
 }
+
+//EXAMPLE http://localhost:8080/api/resolvevanity?vanityurl=tangosukah101

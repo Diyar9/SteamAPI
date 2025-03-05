@@ -1,6 +1,5 @@
 package com.example.steamapi.api.model.ISteamUser.GetPlayerSummaries;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 

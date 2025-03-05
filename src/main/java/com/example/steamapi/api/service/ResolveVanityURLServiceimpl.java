@@ -22,7 +22,7 @@ public class ResolveVanityURLServiceimpl implements ResolveVanityURLService {
 
         if (url_type == null) url_type = 1;
 
-        System.out.println("API-nyckel: " + steamConfigProperties.apiKey());
+        //System.out.println("API-nyckel: " + steamConfigProperties.apiKey());
 
         String url = STEAM_API_URL + "?key=" + steamConfigProperties.apiKey()
                 + "&vanityurl=" + vanityurl + "&url_type=" + url_type;

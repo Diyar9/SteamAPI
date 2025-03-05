@@ -23,3 +23,5 @@ public class SteamNewsController {
         return steamNewsService.getNewsForApp(appid, count, maxlength, enddate, feeds);
     }
 }
+
+//EXAMPLE http://localhost:8080/api/steamnews/730

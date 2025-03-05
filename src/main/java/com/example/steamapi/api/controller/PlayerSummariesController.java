@@ -19,3 +19,5 @@ public class PlayerSummariesController {
         return playerSummariesService.getPlayerSummaries(steamids);
     }
 }
+
+//EXAMPLE http://localhost:8080/api/playersummaries?steamids=76561198051645268
