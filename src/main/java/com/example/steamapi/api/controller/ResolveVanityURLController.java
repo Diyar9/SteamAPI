@@ -15,7 +15,7 @@ public class ResolveVanityURLController {
     }
 
     @GetMapping
-    public ResolveVanityURLResponse getResolveVanityURL(@RequestParam String vanityurl,
+    public ResolveVanityURLResponse getVanityURL(@RequestParam String vanityurl,
                                                         @RequestParam(required = false) Integer url_type) {
         return resolveVanityURLService.getResolveVanityURL(vanityurl, url_type);
     }

@@ -21,4 +21,4 @@ public class GetFriendListController {
     }
 }
 
-//EXAMPLE: http://localhost:8080/api/friendslist?steamid=76561198051645268&relationship=friend
+//EXAMPLE: http://localhost:8080/api/friendslist?steamid=76561198184723727&relationship=friend
